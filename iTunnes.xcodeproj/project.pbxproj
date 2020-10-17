@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F8553766D76E6311837A0F3 /* Pods_iTunnes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADFC0EE1F8D6A8A7799DB5D4 /* Pods_iTunnes.framework */; };
+		803FE468253AC09500C9FCB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803FE467253AC09500C9FCB4 /* AppDelegate.swift */; };
+		803FE46A253AC09500C9FCB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803FE469253AC09500C9FCB4 /* SceneDelegate.swift */; };
+		803FE46C253AC09500C9FCB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803FE46B253AC09500C9FCB4 /* ViewController.swift */; };
+		803FE46F253AC09500C9FCB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803FE46D253AC09500C9FCB4 /* Main.storyboard */; };
+		803FE472253AC09500C9FCB4 /* iTunnes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 803FE470253AC09500C9FCB4 /* iTunnes.xcdatamodeld */; };
+		803FE474253AC09B00C9FCB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 803FE473253AC09B00C9FCB4 /* Assets.xcassets */; };
+		803FE477253AC09B00C9FCB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803FE475253AC09B00C9FCB4 /* LaunchScreen.storyboard */; };
+		803FE482253AC09B00C9FCB4 /* iTunnesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803FE481253AC09B00C9FCB4 /* iTunnesTests.swift */; };
+		803FE491253AC78500C9FCB4 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803FE490253AC78500C9FCB4 /* ApiClient.swift */; };
+		803FE493253AC7E400C9FCB4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803FE492253AC7E400C9FCB4 /* Constants.swift */; };
+		803FE495253AC97800C9FCB4 /* ItunesResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803FE494253AC97800C9FCB4 /* ItunesResult.swift */; };
+		803FE497253AC9E900C9FCB4 /* iTunnesServiceImplement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803FE496253AC9E900C9FCB4 /* iTunnesServiceImplement.swift */; };
+		803FE49A253ACB7300C9FCB4 /* iTunnesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803FE499253ACB7300C9FCB4 /* iTunnesViewModel.swift */; };
+		B72A0C537BEC3DE6B5BA656F /* Pods_iTunnesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE77A53802D4C0E29829D4D /* Pods_iTunnesTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		803FE47E253AC09B00C9FCB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 803FE45C253AC09500C9FCB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 803FE463253AC09500C9FCB4;
+			remoteInfo = iTunnes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		803FE464253AC09500C9FCB4 /* iTunnes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunnes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		803FE467253AC09500C9FCB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		803FE469253AC09500C9FCB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		803FE46B253AC09500C9FCB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		803FE46E253AC09500C9FCB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		803FE471253AC09500C9FCB4 /* iTunnes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iTunnes.xcdatamodel; sourceTree = "<group>"; };
+		803FE473253AC09B00C9FCB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		803FE476253AC09B00C9FCB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		803FE478253AC09B00C9FCB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		803FE47D253AC09B00C9FCB4 /* iTunnesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunnesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		803FE481253AC09B00C9FCB4 /* iTunnesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunnesTests.swift; sourceTree = "<group>"; };
+		803FE483253AC09B00C9FCB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		803FE490253AC78500C9FCB4 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		803FE492253AC7E400C9FCB4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		803FE494253AC97800C9FCB4 /* ItunesResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesResult.swift; sourceTree = "<group>"; };
+		803FE496253AC9E900C9FCB4 /* iTunnesServiceImplement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunnesServiceImplement.swift; sourceTree = "<group>"; };
+		803FE499253ACB7300C9FCB4 /* iTunnesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunnesViewModel.swift; sourceTree = "<group>"; };
+		9C9D670EF241B98C70D40412 /* Pods-iTunnesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunnesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTunnesTests/Pods-iTunnesTests.release.xcconfig"; sourceTree = "<group>"; };
+		9FE77A53802D4C0E29829D4D /* Pods_iTunnesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunnesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A36FEE9670DDBA7A3E5079A3 /* Pods-iTunnesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunnesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTunnesTests/Pods-iTunnesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ADFC0EE1F8D6A8A7799DB5D4 /* Pods_iTunnes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunnes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBE8280027FF976973957E5D /* Pods-iTunnes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunnes.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTunnes/Pods-iTunnes.release.xcconfig"; sourceTree = "<group>"; };
+		E1A4573D424E08E97C56FED6 /* Pods-iTunnes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunnes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTunnes/Pods-iTunnes.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		803FE461253AC09500C9FCB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F8553766D76E6311837A0F3 /* Pods_iTunnes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		803FE47A253AC09B00C9FCB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B72A0C537BEC3DE6B5BA656F /* Pods_iTunnesTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		803FE45B253AC09500C9FCB4 = {
+			isa = PBXGroup;
+			children = (
+				803FE466253AC09500C9FCB4 /* iTunnes */,
+				803FE480253AC09B00C9FCB4 /* iTunnesTests */,
+				803FE465253AC09500C9FCB4 /* Products */,
+				D98AE54DC1928507926E9F02 /* Pods */,
+				DE90B3F46159EF3FF1FCE728 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		803FE465253AC09500C9FCB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				803FE464253AC09500C9FCB4 /* iTunnes.app */,
+				803FE47D253AC09B00C9FCB4 /* iTunnesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		803FE466253AC09500C9FCB4 /* iTunnes */ = {
+			isa = PBXGroup;
+			children = (
+				803FE498253ACB4F00C9FCB4 /* ViewModel */,
+				803FE48F253AC75300C9FCB4 /* Utils */,
+				803FE48E253AC74300C9FCB4 /* View */,
+				803FE48D253AC73300C9FCB4 /* Model */,
+				803FE48C253AC71F00C9FCB4 /* Services */,
+				803FE467253AC09500C9FCB4 /* AppDelegate.swift */,
+				803FE469253AC09500C9FCB4 /* SceneDelegate.swift */,
+				803FE46B253AC09500C9FCB4 /* ViewController.swift */,
+				803FE46D253AC09500C9FCB4 /* Main.storyboard */,
+				803FE473253AC09B00C9FCB4 /* Assets.xcassets */,
+				803FE475253AC09B00C9FCB4 /* LaunchScreen.storyboard */,
+				803FE478253AC09B00C9FCB4 /* Info.plist */,
+				803FE470253AC09500C9FCB4 /* iTunnes.xcdatamodeld */,
+			);
+			path = iTunnes;
+			sourceTree = "<group>";
+		};
+		803FE480253AC09B00C9FCB4 /* iTunnesTests */ = {
+			isa = PBXGroup;
+			children = (
+				803FE481253AC09B00C9FCB4 /* iTunnesTests.swift */,
+				803FE483253AC09B00C9FCB4 /* Info.plist */,
+			);
+			path = iTunnesTests;
+			sourceTree = "<group>";
+		};
+		803FE48C253AC71F00C9FCB4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				803FE490253AC78500C9FCB4 /* ApiClient.swift */,
+				803FE496253AC9E900C9FCB4 /* iTunnesServiceImplement.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		803FE48D253AC73300C9FCB4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				803FE494253AC97800C9FCB4 /* ItunesResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		803FE48E253AC74300C9FCB4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		803FE48F253AC75300C9FCB4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				803FE492253AC7E400C9FCB4 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		803FE498253ACB4F00C9FCB4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				803FE499253ACB7300C9FCB4 /* iTunnesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D98AE54DC1928507926E9F02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1A4573D424E08E97C56FED6 /* Pods-iTunnes.debug.xcconfig */,
+				CBE8280027FF976973957E5D /* Pods-iTunnes.release.xcconfig */,
+				A36FEE9670DDBA7A3E5079A3 /* Pods-iTunnesTests.debug.xcconfig */,
+				9C9D670EF241B98C70D40412 /* Pods-iTunnesTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE90B3F46159EF3FF1FCE728 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADFC0EE1F8D6A8A7799DB5D4 /* Pods_iTunnes.framework */,
+				9FE77A53802D4C0E29829D4D /* Pods_iTunnesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		803FE463253AC09500C9FCB4 /* iTunnes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 803FE486253AC09B00C9FCB4 /* Build configuration list for PBXNativeTarget "iTunnes" */;
+			buildPhases = (
+				566C7591EDE711C408AF0B91 /* [CP] Check Pods Manifest.lock */,
+				803FE460253AC09500C9FCB4 /* Sources */,
+				803FE461253AC09500C9FCB4 /* Frameworks */,
+				803FE462253AC09500C9FCB4 /* Resources */,
+				45241452BB1887BACA348449 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iTunnes;
+			productName = iTunnes;
+			productReference = 803FE464253AC09500C9FCB4 /* iTunnes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		803FE47C253AC09B00C9FCB4 /* iTunnesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 803FE489253AC09B00C9FCB4 /* Build configuration list for PBXNativeTarget "iTunnesTests" */;
+			buildPhases = (
+				AEFBF4B33486AF9855FCCAD2 /* [CP] Check Pods Manifest.lock */,
+				803FE479253AC09B00C9FCB4 /* Sources */,
+				803FE47A253AC09B00C9FCB4 /* Frameworks */,
+				803FE47B253AC09B00C9FCB4 /* Resources */,
+				39466E1F34B1AF33504F0B15 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				803FE47F253AC09B00C9FCB4 /* PBXTargetDependency */,
+			);
+			name = iTunnesTests;
+			productName = iTunnesTests;
+			productReference = 803FE47D253AC09B00C9FCB4 /* iTunnesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		803FE45C253AC09500C9FCB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = ely.assumpcao.ndiaye;
+				TargetAttributes = {
+					803FE463253AC09500C9FCB4 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					803FE47C253AC09B00C9FCB4 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 803FE463253AC09500C9FCB4;
+					};
+				};
+			};
+			buildConfigurationList = 803FE45F253AC09500C9FCB4 /* Build configuration list for PBXProject "iTunnes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 803FE45B253AC09500C9FCB4;
+			productRefGroup = 803FE465253AC09500C9FCB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				803FE463253AC09500C9FCB4 /* iTunnes */,
+				803FE47C253AC09B00C9FCB4 /* iTunnesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		803FE462253AC09500C9FCB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803FE477253AC09B00C9FCB4 /* LaunchScreen.storyboard in Resources */,
+				803FE474253AC09B00C9FCB4 /* Assets.xcassets in Resources */,
+				803FE46F253AC09500C9FCB4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		803FE47B253AC09B00C9FCB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39466E1F34B1AF33504F0B15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iTunnesTests/Pods-iTunnesTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTunnesTests/Pods-iTunnesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45241452BB1887BACA348449 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iTunnes/Pods-iTunnes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iTunnes/Pods-iTunnes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		566C7591EDE711C408AF0B91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTunnes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEFBF4B33486AF9855FCCAD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iTunnesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		803FE460253AC09500C9FCB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803FE46C253AC09500C9FCB4 /* ViewController.swift in Sources */,
+				803FE468253AC09500C9FCB4 /* AppDelegate.swift in Sources */,
+				803FE497253AC9E900C9FCB4 /* iTunnesServiceImplement.swift in Sources */,
+				803FE472253AC09500C9FCB4 /* iTunnes.xcdatamodeld in Sources */,
+				803FE495253AC97800C9FCB4 /* ItunesResult.swift in Sources */,
+				803FE46A253AC09500C9FCB4 /* SceneDelegate.swift in Sources */,
+				803FE491253AC78500C9FCB4 /* ApiClient.swift in Sources */,
+				803FE493253AC7E400C9FCB4 /* Constants.swift in Sources */,
+				803FE49A253ACB7300C9FCB4 /* iTunnesViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		803FE479253AC09B00C9FCB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				803FE482253AC09B00C9FCB4 /* iTunnesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		803FE47F253AC09B00C9FCB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 803FE463253AC09500C9FCB4 /* iTunnes */;
+			targetProxy = 803FE47E253AC09B00C9FCB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		803FE46D253AC09500C9FCB4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				803FE46E253AC09500C9FCB4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		803FE475253AC09B00C9FCB4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				803FE476253AC09B00C9FCB4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		803FE484253AC09B00C9FCB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		803FE485253AC09B00C9FCB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		803FE487253AC09B00C9FCB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1A4573D424E08E97C56FED6 /* Pods-iTunnes.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Z29YW6SJ7;
+				INFOPLIST_FILE = iTunnes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iTunnes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		803FE488253AC09B00C9FCB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBE8280027FF976973957E5D /* Pods-iTunnes.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Z29YW6SJ7;
+				INFOPLIST_FILE = iTunnes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iTunnes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		803FE48A253AC09B00C9FCB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A36FEE9670DDBA7A3E5079A3 /* Pods-iTunnesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Z29YW6SJ7;
+				INFOPLIST_FILE = iTunnesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iTunnesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTunnes.app/iTunnes";
+			};
+			name = Debug;
+		};
+		803FE48B253AC09B00C9FCB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C9D670EF241B98C70D40412 /* Pods-iTunnesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8Z29YW6SJ7;
+				INFOPLIST_FILE = iTunnesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.iTunnesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iTunnes.app/iTunnes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		803FE45F253AC09500C9FCB4 /* Build configuration list for PBXProject "iTunnes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				803FE484253AC09B00C9FCB4 /* Debug */,
+				803FE485253AC09B00C9FCB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		803FE486253AC09B00C9FCB4 /* Build configuration list for PBXNativeTarget "iTunnes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				803FE487253AC09B00C9FCB4 /* Debug */,
+				803FE488253AC09B00C9FCB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		803FE489253AC09B00C9FCB4 /* Build configuration list for PBXNativeTarget "iTunnesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				803FE48A253AC09B00C9FCB4 /* Debug */,
+				803FE48B253AC09B00C9FCB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		803FE470253AC09500C9FCB4 /* iTunnes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				803FE471253AC09500C9FCB4 /* iTunnes.xcdatamodel */,
+			);
+			currentVersion = 803FE471253AC09500C9FCB4 /* iTunnes.xcdatamodel */;
+			path = iTunnes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 803FE45C253AC09500C9FCB4 /* Project object */;
+}
