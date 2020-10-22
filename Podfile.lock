@@ -11,18 +11,32 @@ PODS:
     - iOSSnapshotTestCase (~> 4.0)
     - Nimble (~> 7.0)
   - Quick (1.3.0)
+  - Realm (5.4.3):
+    - Realm/Headers (= 5.4.3)
+  - Realm/Headers (5.4.3)
+  - RealmSwift (5.4.3):
+    - Realm (= 5.4.3)
   - Reusable (4.0.5):
     - Reusable/Storyboard (= 4.0.5)
     - Reusable/View (= 4.0.5)
   - Reusable/Storyboard (4.0.5)
   - Reusable/View (4.0.5)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - Nimble (= 7.3.1)
   - Nimble-Snapshots (= 6.9.0)
   - Quick (= 1.3.0)
+  - RealmSwift
   - Reusable (~> 4.0.2)
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
   - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
@@ -31,7 +45,12 @@ SPEC REPOS:
     - Nimble
     - Nimble-Snapshots
     - Quick
+    - Realm
+    - RealmSwift
     - Reusable
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SnapKit
 
 SPEC CHECKSUMS:
@@ -39,9 +58,14 @@ SPEC CHECKSUMS:
   Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   Nimble-Snapshots: 79394f8d0aea3df54bd5ff78ee9dff05a523a09c
   Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
+  Realm: e3d5fcc50fd79ddf87a2d86301f6edbf57531f84
+  RealmSwift: db608068eccc54bce47928e8118bde13c120c307
   Reusable: 188be1a54ac0691bc66e5bb24ec6eb91971b315b
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 5b42cfaf8f70486ae8d95aee5af3b53c619d51a0
+PODFILE CHECKSUM: 673cf91ba9ae88efec1e261971cc27560b91adae
 
 COCOAPODS: 1.5.2

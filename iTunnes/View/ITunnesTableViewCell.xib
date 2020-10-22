@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ITunnesTableViewCell" rowHeight="95" id="FQ4-7t-a5y" customClass="ITunnesTableViewCell" customModule="iTunnes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FQ4-7t-a5y" id="EFB-Qn-2nW">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVA-45-sZW">
+                        <rect key="frame" x="30" y="25" width="45" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJE-g9-xAb">
+                        <rect key="frame" x="30" y="81" width="46" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhO-qU-TPa">
+                        <rect key="frame" x="351" y="25" width="55" height="30"/>
+                        <state key="normal" title="Favorite"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aJE-g9-xAb" firstAttribute="leading" secondItem="EFB-Qn-2nW" secondAttribute="leading" constant="30" id="1g3-6d-kwT"/>
+                    <constraint firstAttribute="trailing" secondItem="YhO-qU-TPa" secondAttribute="trailing" constant="8" id="31V-6f-U85"/>
+                    <constraint firstAttribute="bottom" secondItem="aJE-g9-xAb" secondAttribute="bottom" constant="18" id="CMe-wj-q6o"/>
+                    <constraint firstItem="YhO-qU-TPa" firstAttribute="top" secondItem="SVA-45-sZW" secondAttribute="top" id="Ijg-ev-ESc"/>
+                    <constraint firstItem="SVA-45-sZW" firstAttribute="top" secondItem="EFB-Qn-2nW" secondAttribute="top" constant="25" id="c48-WO-e1G"/>
+                    <constraint firstItem="SVA-45-sZW" firstAttribute="leading" secondItem="EFB-Qn-2nW" secondAttribute="leading" constant="30" id="fZq-qQ-26G"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="140.57971014492756" y="-110.15625"/>
+        </tableViewCell>
+    </objects>
+</document>

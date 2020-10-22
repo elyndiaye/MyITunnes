@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
-class APIClient {
+class APIClient<T: Decodable> {
 
     let client: URLSession
 
@@ -48,6 +50,30 @@ class APIClient {
 
             completion(.success(data))
         }.resume()
+    }
+    
+    // create a method for calling api which is return a Observable
+    private let baseURL = URL(string: ConverterConstants.baseUrl.rawValue)!
+    func send(apiRequest: APIRequest) -> Observable<T> {
+       
+        return Observable<T>.create { observer in
+            let request = apiRequest.request(with: self.baseURL)
+            let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+                do {
+                    guard let data = data, data.count > 0 else { return }
+                    let model: T = try JSONDecoder().decode(T.self, from: data )
+                    observer.onNext( model)
+                } catch let error {
+                    observer.onError(error)
+                }
+                observer.onCompleted()
+            }
+            task.resume()
+            
+            return Disposables.create {
+                task.cancel()
+            }
+        }
     }
 
 }

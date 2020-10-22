@@ -7,24 +7,43 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol ItemService {
-    func getItens(completionHandler: @escaping (Result<ITunnes, NetworkErrors>) -> Void )
+    //func getItens(completionHandler: @escaping (Result<ITunnes, NetworkErrors>) -> Void )
     
 }
 
-class ItemServiceImpl: ItemService {
+class ItemServiceImpl{
+//: ItemService {
     let baseURL = ConverterConstants.baseUrl.rawValue
-    let list = ConverterConstants.list.rawValue
-    let live = ConverterConstants.live.rawValue
-    let accessKey = ConverterConstants.accessKey.rawValue
-    let key = ConverterConstants.key.rawValue
     
-    var apiCLiente = APIClient()
+    var apiCLient = APIClient<ITunnes<ItunesResult>>()
+     let disposeBag = DisposeBag()
+    
     
     static let instance = ItemServiceImpl()
     
-    func getItens(completionHandler: @escaping (Result<ITunnes, NetworkErrors>) -> Void ) {
+    func searchMusicArtists(searchText: String) -> Observable<[ItunesResult]> {
+           return Observable<[ItunesResult]>.create { [unowned self] observer in
+            self.apiCLient.send(apiRequest: iTunesMusicRequest(term: searchText.lowercased()))
+                   .subscribe(
+                       onNext: { data in
+                        observer.onNext(data.results)
+                       },
+                       onError: { error in
+                           observer.onError(error)
+                       },
+                       onCompleted: {
+                           observer.onCompleted()
+                       }
+                   )
+                .disposed(by: self.disposeBag)
+               return Disposables.create()
+           }
+       }
+    
+    /*func getItens(completionHandler: @escaping (Result<ITunnes, NetworkErrors>) -> Void ) {
         apiCLiente.fetchData(url:"https://itunes.apple.com/search?entity=musicArtist&term=michael") { (response) in
             switch response{
             case .success(let data):
@@ -43,7 +62,7 @@ class ItemServiceImpl: ItemService {
             }
             
         }
-    }
+    }*/
     
  
 //    func storeModels()

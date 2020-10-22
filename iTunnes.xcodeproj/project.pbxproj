@@ -10,7 +10,7 @@
 		5F8553766D76E6311837A0F3 /* Pods_iTunnes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADFC0EE1F8D6A8A7799DB5D4 /* Pods_iTunnes.framework */; };
 		803FE468253AC09500C9FCB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803FE467253AC09500C9FCB4 /* AppDelegate.swift */; };
 		803FE46A253AC09500C9FCB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803FE469253AC09500C9FCB4 /* SceneDelegate.swift */; };
-		803FE46C253AC09500C9FCB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803FE46B253AC09500C9FCB4 /* ViewController.swift */; };
+		803FE46C253AC09500C9FCB4 /* SearchITunnesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803FE46B253AC09500C9FCB4 /* SearchITunnesViewController.swift */; };
 		803FE46F253AC09500C9FCB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803FE46D253AC09500C9FCB4 /* Main.storyboard */; };
 		803FE472253AC09500C9FCB4 /* iTunnes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 803FE470253AC09500C9FCB4 /* iTunnes.xcdatamodeld */; };
 		803FE474253AC09B00C9FCB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 803FE473253AC09B00C9FCB4 /* Assets.xcassets */; };
@@ -21,6 +21,16 @@
 		803FE495253AC97800C9FCB4 /* ItunesResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803FE494253AC97800C9FCB4 /* ItunesResult.swift */; };
 		803FE497253AC9E900C9FCB4 /* iTunnesServiceImplement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803FE496253AC9E900C9FCB4 /* iTunnesServiceImplement.swift */; };
 		803FE49A253ACB7300C9FCB4 /* iTunnesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803FE499253ACB7300C9FCB4 /* iTunnesViewModel.swift */; };
+		80A23BE5253C0E00004692BE /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A23BE4253C0E00004692BE /* FavoriteViewController.swift */; };
+		80A23BE7253DBA1C004692BE /* SearchITunnesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A23BE6253DBA1C004692BE /* SearchITunnesView.swift */; };
+		80A23BE9253DBA66004692BE /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A23BE8253DBA66004692BE /* CodeView.swift */; };
+		80A23BEB253E8198004692BE /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A23BEA253E8198004692BE /* ApiRequest.swift */; };
+		80A23BED253E85C1004692BE /* iTunesMusicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A23BEC253E85C1004692BE /* iTunesMusicRequest.swift */; };
+		80A23BF0253E9DBB004692BE /* ITunnesTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A23BEF253E9DBB004692BE /* ITunnesTableViewDataSource.swift */; };
+		80A23BF2253E9E79004692BE /* ITunnesTablewViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A23BF1253E9E79004692BE /* ITunnesTablewViewDelegate.swift */; };
+		80A23BF4253E9F4B004692BE /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A23BF3253E9F4B004692BE /* Protocol.swift */; };
+		80A23BF6253EA165004692BE /* ITunnesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A23BF5253EA165004692BE /* ITunnesTableViewCell.swift */; };
+		80A23BF8254070E7004692BE /* ITunnesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80A23BF7254070E6004692BE /* ITunnesTableViewCell.xib */; };
 		B72A0C537BEC3DE6B5BA656F /* Pods_iTunnesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE77A53802D4C0E29829D4D /* Pods_iTunnesTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +48,7 @@
 		803FE464253AC09500C9FCB4 /* iTunnes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunnes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		803FE467253AC09500C9FCB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		803FE469253AC09500C9FCB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		803FE46B253AC09500C9FCB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		803FE46B253AC09500C9FCB4 /* SearchITunnesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchITunnesViewController.swift; sourceTree = "<group>"; };
 		803FE46E253AC09500C9FCB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		803FE471253AC09500C9FCB4 /* iTunnes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iTunnes.xcdatamodel; sourceTree = "<group>"; };
 		803FE473253AC09B00C9FCB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +62,16 @@
 		803FE494253AC97800C9FCB4 /* ItunesResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesResult.swift; sourceTree = "<group>"; };
 		803FE496253AC9E900C9FCB4 /* iTunnesServiceImplement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunnesServiceImplement.swift; sourceTree = "<group>"; };
 		803FE499253ACB7300C9FCB4 /* iTunnesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunnesViewModel.swift; sourceTree = "<group>"; };
+		80A23BE4253C0E00004692BE /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		80A23BE6253DBA1C004692BE /* SearchITunnesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchITunnesView.swift; sourceTree = "<group>"; };
+		80A23BE8253DBA66004692BE /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		80A23BEA253E8198004692BE /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		80A23BEC253E85C1004692BE /* iTunesMusicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesMusicRequest.swift; sourceTree = "<group>"; };
+		80A23BEF253E9DBB004692BE /* ITunnesTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunnesTableViewDataSource.swift; sourceTree = "<group>"; };
+		80A23BF1253E9E79004692BE /* ITunnesTablewViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunnesTablewViewDelegate.swift; sourceTree = "<group>"; };
+		80A23BF3253E9F4B004692BE /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		80A23BF5253EA165004692BE /* ITunnesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunnesTableViewCell.swift; sourceTree = "<group>"; };
+		80A23BF7254070E6004692BE /* ITunnesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ITunnesTableViewCell.xib; sourceTree = "<group>"; };
 		9C9D670EF241B98C70D40412 /* Pods-iTunnesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunnesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTunnesTests/Pods-iTunnesTests.release.xcconfig"; sourceTree = "<group>"; };
 		9FE77A53802D4C0E29829D4D /* Pods_iTunnesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunnesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A36FEE9670DDBA7A3E5079A3 /* Pods-iTunnesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunnesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTunnesTests/Pods-iTunnesTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,14 +123,16 @@
 		803FE466253AC09500C9FCB4 /* iTunnes */ = {
 			isa = PBXGroup;
 			children = (
-				803FE498253ACB4F00C9FCB4 /* ViewModel */,
+				80A23BEE253E9CA2004692BE /* TableView */,
+				803FE48C253AC71F00C9FCB4 /* Services */,
 				803FE48F253AC75300C9FCB4 /* Utils */,
 				803FE48E253AC74300C9FCB4 /* View */,
+				803FE498253ACB4F00C9FCB4 /* ViewModel */,
 				803FE48D253AC73300C9FCB4 /* Model */,
-				803FE48C253AC71F00C9FCB4 /* Services */,
 				803FE467253AC09500C9FCB4 /* AppDelegate.swift */,
 				803FE469253AC09500C9FCB4 /* SceneDelegate.swift */,
-				803FE46B253AC09500C9FCB4 /* ViewController.swift */,
+				803FE46B253AC09500C9FCB4 /* SearchITunnesViewController.swift */,
+				80A23BE4253C0E00004692BE /* FavoriteViewController.swift */,
 				803FE46D253AC09500C9FCB4 /* Main.storyboard */,
 				803FE473253AC09B00C9FCB4 /* Assets.xcassets */,
 				803FE475253AC09B00C9FCB4 /* LaunchScreen.storyboard */,
@@ -133,6 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				803FE490253AC78500C9FCB4 /* ApiClient.swift */,
+				80A23BEA253E8198004692BE /* ApiRequest.swift */,
+				80A23BEC253E85C1004692BE /* iTunesMusicRequest.swift */,
 				803FE496253AC9E900C9FCB4 /* iTunnesServiceImplement.swift */,
 			);
 			path = Services;
@@ -149,6 +173,9 @@
 		803FE48E253AC74300C9FCB4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				80A23BE6253DBA1C004692BE /* SearchITunnesView.swift */,
+				80A23BF5253EA165004692BE /* ITunnesTableViewCell.swift */,
+				80A23BF7254070E6004692BE /* ITunnesTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,6 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				803FE492253AC7E400C9FCB4 /* Constants.swift */,
+				80A23BE8253DBA66004692BE /* CodeView.swift */,
+				80A23BF3253E9F4B004692BE /* Protocol.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -167,6 +196,15 @@
 				803FE499253ACB7300C9FCB4 /* iTunnesViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		80A23BEE253E9CA2004692BE /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				80A23BEF253E9DBB004692BE /* ITunnesTableViewDataSource.swift */,
+				80A23BF1253E9E79004692BE /* ITunnesTablewViewDelegate.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 		D98AE54DC1928507926E9F02 /* Pods */ = {
@@ -276,6 +314,7 @@
 			files = (
 				803FE477253AC09B00C9FCB4 /* LaunchScreen.storyboard in Resources */,
 				803FE474253AC09B00C9FCB4 /* Assets.xcassets in Resources */,
+				80A23BF8254070E7004692BE /* ITunnesTableViewCell.xib in Resources */,
 				803FE46F253AC09500C9FCB4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,12 +360,22 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iTunnes/Pods-iTunnes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,13 +426,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				803FE46C253AC09500C9FCB4 /* ViewController.swift in Sources */,
+				80A23BEB253E8198004692BE /* ApiRequest.swift in Sources */,
+				803FE46C253AC09500C9FCB4 /* SearchITunnesViewController.swift in Sources */,
 				803FE468253AC09500C9FCB4 /* AppDelegate.swift in Sources */,
+				80A23BED253E85C1004692BE /* iTunesMusicRequest.swift in Sources */,
 				803FE497253AC9E900C9FCB4 /* iTunnesServiceImplement.swift in Sources */,
+				80A23BF2253E9E79004692BE /* ITunnesTablewViewDelegate.swift in Sources */,
+				80A23BE9253DBA66004692BE /* CodeView.swift in Sources */,
 				803FE472253AC09500C9FCB4 /* iTunnes.xcdatamodeld in Sources */,
+				80A23BE5253C0E00004692BE /* FavoriteViewController.swift in Sources */,
 				803FE495253AC97800C9FCB4 /* ItunesResult.swift in Sources */,
+				80A23BE7253DBA1C004692BE /* SearchITunnesView.swift in Sources */,
 				803FE46A253AC09500C9FCB4 /* SceneDelegate.swift in Sources */,
+				80A23BF6253EA165004692BE /* ITunnesTableViewCell.swift in Sources */,
 				803FE491253AC78500C9FCB4 /* ApiClient.swift in Sources */,
+				80A23BF0253E9DBB004692BE /* ITunnesTableViewDataSource.swift in Sources */,
+				80A23BF4253E9F4B004692BE /* Protocol.swift in Sources */,
 				803FE493253AC7E400C9FCB4 /* Constants.swift in Sources */,
 				803FE49A253ACB7300C9FCB4 /* iTunnesViewModel.swift in Sources */,
 			);

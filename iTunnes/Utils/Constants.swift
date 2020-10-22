@@ -10,10 +10,7 @@ import Foundation
 
 enum ConverterConstants: String {
     case baseUrl = "https://itunes.apple.com/search?entity=musicArtist&term=a"
-    case accessKey = "access_key"
-    case key = "5007ff0fc8da9ec5613e5d195eb09e05"
-    case live = "live"
-    case list = "list"
+    case musicArtist = "musicArtist"
 }
 
 enum NetworkErrors: String, Error {

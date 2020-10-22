@@ -11,8 +11,8 @@
 import Foundation
 
 // MARK: - ITunnes
-struct ITunnes: Codable {
-    let resultCount: Int
+struct ITunnes<T: Codable>: Decodable {
+    let resultCount: Int?
     let results: [ItunesResult]
 }
 
@@ -23,8 +23,8 @@ struct ItunesResult: Codable {
     let artistName: String
     let artistLinkURL: String
     let artistID: Int
-    let primaryGenreName: String
-    let primaryGenreID: Int
+    let primaryGenreName: String?
+    let primaryGenreID: Int?
     let amgArtistID: Int?
 
     enum CodingKeys: String, CodingKey {

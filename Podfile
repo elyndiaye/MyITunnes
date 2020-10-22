@@ -8,7 +8,9 @@ target 'iTunnes' do
   use_frameworks!
   pod 'Reusable', '~> 4.0.2'
   pod 'SnapKit', '~> 5.0.0'
-
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
+  pod 'RealmSwift'
   # Pods for iTunnes
 
   target 'iTunnesTests' do
