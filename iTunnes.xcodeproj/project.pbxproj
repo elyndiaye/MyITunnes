@@ -31,6 +31,7 @@
 		80A23BF4253E9F4B004692BE /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A23BF3253E9F4B004692BE /* Protocol.swift */; };
 		80A23BF6253EA165004692BE /* ITunnesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A23BF5253EA165004692BE /* ITunnesTableViewCell.swift */; };
 		80A23BF8254070E7004692BE /* ITunnesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80A23BF7254070E6004692BE /* ITunnesTableViewCell.xib */; };
+		80A23BFB25410D98004692BE /* SearchMoviesItunnesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A23BFA25410D98004692BE /* SearchMoviesItunnesViewController.swift */; };
 		B72A0C537BEC3DE6B5BA656F /* Pods_iTunnesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE77A53802D4C0E29829D4D /* Pods_iTunnesTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		80A23BF3253E9F4B004692BE /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 		80A23BF5253EA165004692BE /* ITunnesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunnesTableViewCell.swift; sourceTree = "<group>"; };
 		80A23BF7254070E6004692BE /* ITunnesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ITunnesTableViewCell.xib; sourceTree = "<group>"; };
+		80A23BFA25410D98004692BE /* SearchMoviesItunnesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMoviesItunnesViewController.swift; sourceTree = "<group>"; };
 		9C9D670EF241B98C70D40412 /* Pods-iTunnesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunnesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTunnesTests/Pods-iTunnesTests.release.xcconfig"; sourceTree = "<group>"; };
 		9FE77A53802D4C0E29829D4D /* Pods_iTunnesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunnesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A36FEE9670DDBA7A3E5079A3 /* Pods-iTunnesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunnesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTunnesTests/Pods-iTunnesTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,15 +126,14 @@
 			isa = PBXGroup;
 			children = (
 				80A23BEE253E9CA2004692BE /* TableView */,
-				803FE48C253AC71F00C9FCB4 /* Services */,
 				803FE48F253AC75300C9FCB4 /* Utils */,
+				803FE48C253AC71F00C9FCB4 /* Services */,
+				803FE48D253AC73300C9FCB4 /* Model */,
 				803FE48E253AC74300C9FCB4 /* View */,
 				803FE498253ACB4F00C9FCB4 /* ViewModel */,
-				803FE48D253AC73300C9FCB4 /* Model */,
+				80A23BF925410D21004692BE /* ViewController */,
 				803FE467253AC09500C9FCB4 /* AppDelegate.swift */,
 				803FE469253AC09500C9FCB4 /* SceneDelegate.swift */,
-				803FE46B253AC09500C9FCB4 /* SearchITunnesViewController.swift */,
-				80A23BE4253C0E00004692BE /* FavoriteViewController.swift */,
 				803FE46D253AC09500C9FCB4 /* Main.storyboard */,
 				803FE473253AC09B00C9FCB4 /* Assets.xcassets */,
 				803FE475253AC09B00C9FCB4 /* LaunchScreen.storyboard */,
@@ -205,6 +206,16 @@
 				80A23BF1253E9E79004692BE /* ITunnesTablewViewDelegate.swift */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		80A23BF925410D21004692BE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				803FE46B253AC09500C9FCB4 /* SearchITunnesViewController.swift */,
+				80A23BE4253C0E00004692BE /* FavoriteViewController.swift */,
+				80A23BFA25410D98004692BE /* SearchMoviesItunnesViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		D98AE54DC1928507926E9F02 /* Pods */ = {
@@ -440,6 +451,7 @@
 				803FE46A253AC09500C9FCB4 /* SceneDelegate.swift in Sources */,
 				80A23BF6253EA165004692BE /* ITunnesTableViewCell.swift in Sources */,
 				803FE491253AC78500C9FCB4 /* ApiClient.swift in Sources */,
+				80A23BFB25410D98004692BE /* SearchMoviesItunnesViewController.swift in Sources */,
 				80A23BF0253E9DBB004692BE /* ITunnesTableViewDataSource.swift in Sources */,
 				80A23BF4253E9F4B004692BE /* Protocol.swift in Sources */,
 				803FE493253AC7E400C9FCB4 /* Constants.swift in Sources */,

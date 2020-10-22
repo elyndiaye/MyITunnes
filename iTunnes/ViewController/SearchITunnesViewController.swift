@@ -33,7 +33,7 @@ class SearchITunnesViewController: UIViewController {
     
     override func loadView() {
           super.loadView()
-          self.view = screenList
+          //self.view = screenList
         
       }
 
@@ -71,7 +71,7 @@ class SearchITunnesViewController: UIViewController {
         
         searchController.searchBar.rx.text.orEmpty
         .flatMapLatest { text in
-            self.serviceAPI.searchMusicArtists(searchText: text)
+            self.serviceAPI.searchMusic(searchText: text)
         }
         .bind(to: tableView.rx.items(cellIdentifier: cellIdentifier)) { index, model, cell in
             cell.textLabel?.text = model.artistName

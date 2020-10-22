@@ -75,6 +75,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         return navController
     }
     
+    func createMoviesSearchITunnesVC() -> UINavigationController {
+        let searchITunnesVC = SearchMoviesItunnesViewController()
+        let navController = UINavigationController(rootViewController: searchITunnesVC)
+        searchITunnesVC.title = "Movies"
+        searchITunnesVC.tabBarItem = UITabBarItem(
+            title: "Movies",
+            image: UIImage.init(named: "search_icon")?.withRenderingMode(.alwaysTemplate), tag: 1)
+        return navController
+    }
+    
     func createFavoritesVC() -> UINavigationController {
         let favoritesVC = FavoriteViewController()
         let navController = UINavigationController(rootViewController: favoritesVC)

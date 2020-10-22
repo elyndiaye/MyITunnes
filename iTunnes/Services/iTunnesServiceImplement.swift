@@ -24,7 +24,7 @@ class ItemServiceImpl{
     
     static let instance = ItemServiceImpl()
     
-    func searchMusicArtists(searchText: String) -> Observable<[ItunesResult]> {
+    func searchMusic(searchText: String) -> Observable<[ItunesResult]> {
            return Observable<[ItunesResult]>.create { [unowned self] observer in
             self.apiCLient.send(apiRequest: iTunesMusicRequest(term: searchText.lowercased()))
                    .subscribe(
