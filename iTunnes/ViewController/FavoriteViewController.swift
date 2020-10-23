@@ -12,64 +12,51 @@ import RxCocoa
 
 class FavoriteViewController: UIViewController {
     
-    private let tableView = UITableView()
-    private let cellIdentifier = "cellIdentifier"
+    let screenList = SearchITunnesView()
+    //var viewModel =  iTunnesViewModel()
     
-    //var inSearchMode = false
+    private let cellIdentifier = "ITunnesTableViewCell"
+    
     //Mover para a viewModel
     let serviceAPI = ItemServiceImpl()
     private let disposeBag = DisposeBag()
     
-    private let searchController: UISearchController = {
-           let searchController = UISearchController(searchResultsController: nil)
-           searchController.searchBar.placeholder = "Search Movies"
-           return searchController
-       }()
+    override func loadView() {
+        super.loadView()
+        self.view = screenList
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         configureProperties()
-        configureLayout()
-        configureReactiveBinding()
-        
+        //configureReactiveBinding()
     }
     
     private func configureProperties() {
-           tableView.register(ITunnesTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
-           navigationItem.searchController = searchController
-           navigationItem.title = "Movies Collection"
-           navigationItem.hidesSearchBarWhenScrolling = false
-           navigationController?.navigationBar.prefersLargeTitles = true
-       }
-
-       private func configureLayout() {
-           tableView.translatesAutoresizingMaskIntoConstraints = false
-           view.addSubview(tableView)
-           NSLayoutConstraint.activate([
-               tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-               tableView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
-               tableView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
-               tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-           ])
-           tableView.contentInset.bottom = view.safeAreaInsets.bottom
-       }
-       
-
-       private func configureReactiveBinding() {
-           
-           searchController.searchBar.rx.text.orEmpty
-           .flatMapLatest { text in
-            self.serviceAPI.searchMovie(searchText: text)
-           }
-           .bind(to: tableView.rx.items(cellIdentifier: cellIdentifier)) { index, model, cell in
-               cell.textLabel?.text = model.trackName
-               cell.detailTextLabel?.text = model.primaryGenreName
-               cell.textLabel?.adjustsFontSizeToFitWidth = true
-             //cell.detailTextLabel?.adjustsFontSizeToFitWidth = true
-               print(model)
-           }
-           .disposed(by: disposeBag)
-           
-       }
+        screenList.search.placeholder = "Search Movies Itunnes"
+        screenList.table.register(UINib(nibName: "ITunnesTableViewCell", bundle: nil), forCellReuseIdentifier: "ITunnesTableViewCell")
+        //navigationItem.searchController = searchController
+        navigationItem.title = "Favorites Collection"
+        navigationItem.hidesSearchBarWhenScrolling = false
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    
+    private func configureReactiveBinding() {
+        
+        screenList.search.rx.text.orEmpty
+            .flatMapLatest { text in
+                self.serviceAPI.searchMovie(searchText: text)
+        }
+        .bind(to: screenList.table.rx.items(cellIdentifier: cellIdentifier,cellType: ITunnesTableViewCell.self)) { index, model, cell in
+            cell.nameLbl?.text = model.trackName
+            cell.musicLbl?.text = model.primaryGenreName
+            cell.nameLbl?.adjustsFontSizeToFitWidth = true
+            cell.musicLbl?.adjustsFontSizeToFitWidth = true
+        }
+        .disposed(by: disposeBag)
+        
+    }
 }

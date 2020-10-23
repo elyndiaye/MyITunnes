@@ -28,11 +28,11 @@ class SearchITunnesViewController: UIViewController {
     }()
     
     override func loadView() {
-          super.loadView()
-          self.view = screenList
+        super.loadView()
+        self.view = screenList
         
-      }
-
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -44,27 +44,26 @@ class SearchITunnesViewController: UIViewController {
     private func configureProperties() {
         screenList.table.register(UINib(nibName: "ITunnesTableViewCell", bundle: nil), forCellReuseIdentifier: "ITunnesTableViewCell")
         //navigationItem.searchController = searchController
-        navigationItem.title = "Itunnes Collection"
+        navigationItem.title = "Itunnes Music"
         navigationItem.hidesSearchBarWhenScrolling = false
         navigationController?.navigationBar.prefersLargeTitles = true
     }
-
+    
     private func configureReactiveBinding() {
         
         screenList.search.rx.text.orEmpty
-        .flatMapLatest { text in
-            self.serviceAPI.searchMusic(searchText: text)
+            .flatMapLatest { text in
+                self.serviceAPI.searchMusic(searchText: text)
         }
         .bind(to: screenList.table.rx.items(cellIdentifier: cellIdentifier,cellType: ITunnesTableViewCell.self)) { index, model, cell in
             cell.nameLbl?.text = model.artistName
             cell.musicLbl?.text = model.primaryGenreName
             cell.nameLbl?.adjustsFontSizeToFitWidth = true
-            print(model)
         }
         .disposed(by: disposeBag)
         
     }
     
-
+    
 }
 

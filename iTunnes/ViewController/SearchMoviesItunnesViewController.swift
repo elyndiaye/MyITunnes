@@ -7,24 +7,56 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class SearchMoviesItunnesViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    let screenList = SearchITunnesView()
+    //var viewModel =  iTunnesViewModel()
+    
+    private let cellIdentifier = "ITunnesTableViewCell"
+    
+    //Mover para a viewModel
+    let serviceAPI = ItemServiceImpl()
+    private let disposeBag = DisposeBag()
+    
+    override func loadView() {
+        super.loadView()
+        self.view = screenList
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        configureProperties()
+        configureReactiveBinding()
     }
-    */
-
+    
+    private func configureProperties() {
+        screenList.search.placeholder = "Search Movies Itunnes"
+        screenList.table.register(UINib(nibName: "ITunnesTableViewCell", bundle: nil), forCellReuseIdentifier: "ITunnesTableViewCell")
+        //navigationItem.searchController = searchController
+        navigationItem.title = "Itunnes Movies"
+        navigationItem.hidesSearchBarWhenScrolling = false
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    
+    private func configureReactiveBinding() {
+        
+        screenList.search.rx.text.orEmpty
+            .flatMapLatest { text in
+                self.serviceAPI.searchMovie(searchText: text)
+        }
+        .bind(to: screenList.table.rx.items(cellIdentifier: cellIdentifier,cellType: ITunnesTableViewCell.self)) { index, model, cell in
+            cell.nameLbl?.text = model.trackName
+            cell.musicLbl?.text = model.primaryGenreName
+            cell.nameLbl?.adjustsFontSizeToFitWidth = true
+            cell.musicLbl?.adjustsFontSizeToFitWidth = true
+        }
+        .disposed(by: disposeBag)
+        
+    }
+    
 }
