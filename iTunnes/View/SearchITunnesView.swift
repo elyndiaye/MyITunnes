@@ -70,6 +70,7 @@ extension SearchITunnesView: CodeView{
     
     func setupAdditionalConfiguration() {
         //Setup adicional
+        search.placeholder = "Search Itunnes"
     }
     
 }

@@ -9,7 +9,7 @@
 import Foundation
 
 enum ConverterConstants: String {
-    case baseUrl = "https://itunes.apple.com/search?entity=musicArtist&term=a"
+    case baseUrl = "https://itunes.apple.com/search"
     case musicArtist = "musicArtist"
 }
 

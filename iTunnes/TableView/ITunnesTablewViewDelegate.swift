@@ -11,10 +11,10 @@ import UIKit
 final class ITunnesTablewViewDelegate: NSObject, UITableViewDelegate{
     weak var delegate: ITunnesSelectionDelegate?
     let items:[ItunesResult]
-                        
-    init(items: [ItunesResult], delegate: ITunnesSelectionDelegate){
+                             //, delegate: ITunnesSelectionDelegate
+    init(items: [ItunesResult]){
         self.items = items
-        self.delegate = delegate
+       // self.delegate = delegate
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

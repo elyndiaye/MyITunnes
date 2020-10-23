@@ -18,14 +18,22 @@ struct ITunnes<T: Codable>: Decodable {
 
 // MARK: - Result
 struct ItunesResult: Codable {
-    let wrapperType: WrapperType
-    let artistType: ArtistType
-    let artistName: String
-    let artistLinkURL: String
-    let artistID: Int
+    let wrapperType: WrapperType?
+    let artistType: ArtistType?
+    let artistName: String?
+    let artistLinkURL: String?
+    let artistID: Int?
     let primaryGenreName: String?
     let primaryGenreID: Int?
     let amgArtistID: Int?
+
+    
+    let collectionName: String?
+    let trackName: String?
+    let collectionCensoredName: String?
+    let trackCensoredName: String?
+    let collectionArtistViewURL, collectionViewURL: String?
+    let shortDescription: String?
 
     enum CodingKeys: String, CodingKey {
         case wrapperType, artistType, artistName
@@ -34,6 +42,12 @@ struct ItunesResult: Codable {
         case primaryGenreName
         case primaryGenreID = "primaryGenreId"
         case amgArtistID = "amgArtistId"
+       
+        case collectionName, trackName, collectionCensoredName, trackCensoredName
+        case collectionArtistViewURL = "collectionArtistViewUrl"
+        case collectionViewURL = "collectionViewUrl"
+        case  shortDescription
+        
     }
 }
 
@@ -45,5 +59,6 @@ enum ArtistType: String, Codable {
 
 enum WrapperType: String, Codable {
     case artist = "artist"
+    case track = "track"
 }
 

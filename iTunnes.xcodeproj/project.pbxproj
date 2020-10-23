@@ -32,6 +32,7 @@
 		80A23BF6253EA165004692BE /* ITunnesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A23BF5253EA165004692BE /* ITunnesTableViewCell.swift */; };
 		80A23BF8254070E7004692BE /* ITunnesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80A23BF7254070E6004692BE /* ITunnesTableViewCell.xib */; };
 		80A23BFB25410D98004692BE /* SearchMoviesItunnesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A23BFA25410D98004692BE /* SearchMoviesItunnesViewController.swift */; };
+		80A23BFD25422CE6004692BE /* iTunesMovieRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A23BFC25422CE5004692BE /* iTunesMovieRequest.swift */; };
 		B72A0C537BEC3DE6B5BA656F /* Pods_iTunnesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE77A53802D4C0E29829D4D /* Pods_iTunnesTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		80A23BF5253EA165004692BE /* ITunnesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunnesTableViewCell.swift; sourceTree = "<group>"; };
 		80A23BF7254070E6004692BE /* ITunnesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ITunnesTableViewCell.xib; sourceTree = "<group>"; };
 		80A23BFA25410D98004692BE /* SearchMoviesItunnesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMoviesItunnesViewController.swift; sourceTree = "<group>"; };
+		80A23BFC25422CE5004692BE /* iTunesMovieRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesMovieRequest.swift; sourceTree = "<group>"; };
 		9C9D670EF241B98C70D40412 /* Pods-iTunnesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunnesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iTunnesTests/Pods-iTunnesTests.release.xcconfig"; sourceTree = "<group>"; };
 		9FE77A53802D4C0E29829D4D /* Pods_iTunnesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iTunnesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A36FEE9670DDBA7A3E5079A3 /* Pods-iTunnesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iTunnesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iTunnesTests/Pods-iTunnesTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				803FE490253AC78500C9FCB4 /* ApiClient.swift */,
 				80A23BEA253E8198004692BE /* ApiRequest.swift */,
 				80A23BEC253E85C1004692BE /* iTunesMusicRequest.swift */,
+				80A23BFC25422CE5004692BE /* iTunesMovieRequest.swift */,
 				803FE496253AC9E900C9FCB4 /* iTunnesServiceImplement.swift */,
 			);
 			path = Services;
@@ -453,6 +456,7 @@
 				803FE491253AC78500C9FCB4 /* ApiClient.swift in Sources */,
 				80A23BFB25410D98004692BE /* SearchMoviesItunnesViewController.swift in Sources */,
 				80A23BF0253E9DBB004692BE /* ITunnesTableViewDataSource.swift in Sources */,
+				80A23BFD25422CE6004692BE /* iTunesMovieRequest.swift in Sources */,
 				80A23BF4253E9F4B004692BE /* Protocol.swift in Sources */,
 				803FE493253AC7E400C9FCB4 /* Constants.swift in Sources */,
 				803FE49A253ACB7300C9FCB4 /* iTunnesViewModel.swift in Sources */,

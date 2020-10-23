@@ -20,7 +20,7 @@ final class ITunnesTableViewDataSource: NSObject, UITableViewDataSource{
     }
     
     private func setupTableView(_ tableView: UITableView) {
-        tableView.register(cellType: ITunnesTableViewCell.self)
+      //  tableView.register(cellType: ITunnesTableViewCell.self)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

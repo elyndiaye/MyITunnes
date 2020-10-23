@@ -43,26 +43,24 @@ class ItemServiceImpl{
            }
        }
     
-    /*func getItens(completionHandler: @escaping (Result<ITunnes, NetworkErrors>) -> Void ) {
-        apiCLiente.fetchData(url:"https://itunes.apple.com/search?entity=musicArtist&term=michael") { (response) in
-            switch response{
-            case .success(let data):
-                let decoder = JSONDecoder()
-                decoder.keyDecodingStrategy = .convertFromSnakeCase
-                guard let decodedItens = try? decoder.decode(ITunnes.self, from: data) else {
-                    completionHandler(.failure(.invalidData))
-                    return
-                }
-                //completion
-                print(decodedItens.results)
-                completionHandler(.success(decodedItens))
-            case .failure(let error):
-                debugPrint(error)
-                completionHandler(.failure(.invalidResponse))
-            }
-            
+    func searchMovie(searchText: String) -> Observable<[ItunesResult]> {
+        return Observable<[ItunesResult]>.create { [unowned self] observer in
+         self.apiCLient.send(apiRequest: iTunesMovieRequest(term: searchText.lowercased()))
+                .subscribe(
+                    onNext: { data in
+                     observer.onNext(data.results)
+                    },
+                    onError: { error in
+                        observer.onError(error)
+                    },
+                    onCompleted: {
+                        observer.onCompleted()
+                    }
+                )
+             .disposed(by: self.disposeBag)
+            return Disposables.create()
         }
-    }*/
+    }
     
  
 //    func storeModels()

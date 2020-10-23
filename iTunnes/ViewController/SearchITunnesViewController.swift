@@ -13,14 +13,10 @@ import RxCocoa
 class SearchITunnesViewController: UIViewController {
     
     let screenList = SearchITunnesView()
-    var tableViewDataSource: ITunnesTableViewDataSource?
-    var tableViewDelegate: ITunnesTablewViewDelegate?
     //var viewModel =  iTunnesViewModel()
     
-    private let tableView = UITableView()
-    private let cellIdentifier = "cellIdentifier"
+    private let cellIdentifier = "ITunnesTableViewCell"
     
-    //var inSearchMode = false
     //Mover para a viewModel
     let serviceAPI = ItemServiceImpl()
     private let disposeBag = DisposeBag()
@@ -33,7 +29,7 @@ class SearchITunnesViewController: UIViewController {
     
     override func loadView() {
           super.loadView()
-          //self.view = screenList
+          self.view = screenList
         
       }
 
@@ -41,58 +37,34 @@ class SearchITunnesViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         configureProperties()
-        configureLayout()
         configureReactiveBinding()
         
     }
     
     private func configureProperties() {
-        tableView.register(ITunnesTableViewCell.self, forCellReuseIdentifier: cellIdentifier)
-        navigationItem.searchController = searchController
+        screenList.table.register(UINib(nibName: "ITunnesTableViewCell", bundle: nil), forCellReuseIdentifier: "ITunnesTableViewCell")
+        //navigationItem.searchController = searchController
         navigationItem.title = "Itunnes Collection"
         navigationItem.hidesSearchBarWhenScrolling = false
         navigationController?.navigationBar.prefersLargeTitles = true
     }
 
-    private func configureLayout() {
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(tableView)
-        NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            tableView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
-            tableView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
-            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
-        tableView.contentInset.bottom = view.safeAreaInsets.bottom
-    }
-    
-
     private func configureReactiveBinding() {
         
-        searchController.searchBar.rx.text.orEmpty
+        screenList.search.rx.text.orEmpty
         .flatMapLatest { text in
             self.serviceAPI.searchMusic(searchText: text)
         }
-        .bind(to: tableView.rx.items(cellIdentifier: cellIdentifier)) { index, model, cell in
-            cell.textLabel?.text = model.artistName
-            cell.detailTextLabel?.text = model.primaryGenreName
-            cell.textLabel?.adjustsFontSizeToFitWidth = true
+        .bind(to: screenList.table.rx.items(cellIdentifier: cellIdentifier,cellType: ITunnesTableViewCell.self)) { index, model, cell in
+            cell.nameLbl?.text = model.artistName
+            cell.musicLbl?.text = model.primaryGenreName
+            cell.nameLbl?.adjustsFontSizeToFitWidth = true
             print(model)
         }
         .disposed(by: disposeBag)
         
     }
     
-    //MARK: - SetupTableView
-    func setupTableView(with item: [ItunesResult]){
-        tableViewDataSource = ITunnesTableViewDataSource(items: item, tableView: screenList.table)
-        //tableViewDelegate = ITunnesTablewViewDelegate(items: item)
-        
-        screenList.table.dataSource = tableViewDataSource
-        screenList.table.delegate = tableViewDelegate
-        screenList.table.reloadData()
-    }
-
 
 }
 

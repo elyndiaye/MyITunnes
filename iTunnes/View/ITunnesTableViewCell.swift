@@ -11,13 +11,13 @@ import Reusable
 
 class ITunnesTableViewCell: UITableViewCell, NibReusable {
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-          super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
-      }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var musicLbl: UILabel!
+    @IBOutlet weak var favoriteBtn: UIButton!
+    
+    
+   
     
     override func awakeFromNib() {
         super.awakeFromNib()

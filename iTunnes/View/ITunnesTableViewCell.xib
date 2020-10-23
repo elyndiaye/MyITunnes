@@ -15,32 +15,42 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVA-45-sZW">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVA-45-sZW">
                         <rect key="frame" x="30" y="25" width="45" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJE-g9-xAb">
-                        <rect key="frame" x="30" y="81" width="46" height="21"/>
+                        <rect key="frame" x="30" y="74" width="46" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="BI5-lt-Pjb"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhO-qU-TPa">
-                        <rect key="frame" x="351" y="25" width="55" height="30"/>
+                        <rect key="frame" x="330" y="25" width="76" height="30"/>
                         <state key="normal" title="Favorite"/>
                     </button>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="aJE-g9-xAb" firstAttribute="top" secondItem="SVA-45-sZW" secondAttribute="bottom" constant="28" id="1ar-wb-NXI"/>
                     <constraint firstItem="aJE-g9-xAb" firstAttribute="leading" secondItem="EFB-Qn-2nW" secondAttribute="leading" constant="30" id="1g3-6d-kwT"/>
                     <constraint firstAttribute="trailing" secondItem="YhO-qU-TPa" secondAttribute="trailing" constant="8" id="31V-6f-U85"/>
-                    <constraint firstAttribute="bottom" secondItem="aJE-g9-xAb" secondAttribute="bottom" constant="18" id="CMe-wj-q6o"/>
-                    <constraint firstItem="YhO-qU-TPa" firstAttribute="top" secondItem="SVA-45-sZW" secondAttribute="top" id="Ijg-ev-ESc"/>
+                    <constraint firstItem="YhO-qU-TPa" firstAttribute="leading" secondItem="SVA-45-sZW" secondAttribute="leading" constant="300" id="AbH-Fy-Rqe"/>
                     <constraint firstItem="SVA-45-sZW" firstAttribute="top" secondItem="EFB-Qn-2nW" secondAttribute="top" constant="25" id="c48-WO-e1G"/>
                     <constraint firstItem="SVA-45-sZW" firstAttribute="leading" secondItem="EFB-Qn-2nW" secondAttribute="leading" constant="30" id="fZq-qQ-26G"/>
+                    <constraint firstItem="YhO-qU-TPa" firstAttribute="top" secondItem="SVA-45-sZW" secondAttribute="top" id="hV5-sw-MeI"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="aJE-g9-xAb" secondAttribute="bottom" constant="14" id="oim-MM-aSf"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="favoriteBtn" destination="YhO-qU-TPa" id="9yz-KU-VWn"/>
+                <outlet property="musicLbl" destination="aJE-g9-xAb" id="1PF-7p-fAV"/>
+                <outlet property="nameLbl" destination="SVA-45-sZW" id="tmD-jq-yiT"/>
+            </connections>
             <point key="canvasLocation" x="140.57971014492756" y="-110.15625"/>
         </tableViewCell>
     </objects>
